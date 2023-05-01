@@ -1,0 +1,255 @@
+﻿Sum of digits
+
+
+import java.util.*;
+public class AssignmentJava {
+   public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       // Sum of digits
+       int sum = 0, r, temp, num;
+       System.out.print("Enter any number: ");
+        num = sc.nextInt();
+
+
+        temp = num;
+
+
+         while(temp != 0) {
+             r = temp % 10;
+             sum = sum + r;
+             temp = temp / 10;
+         }
+
+
+       System.out.println("Sum of digits = " + sum);
+
+
+   }
+}
+
+
+
+
+
+
+How to Reverse a Number
+
+
+import java.util.*;
+public class AssignmentJava {
+   public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       // Reverse number
+       int num,sum = 0, r, temp;
+       System.out.print("Enter any number: ");
+        num = sc.nextInt();
+
+
+        temp = num;
+
+
+         while(temp != 0) {
+             r = temp % 10;
+             sum = sum * 10 + r;
+             temp = temp / 10;
+         }
+
+
+       System.out.println("Reverse = " + sum);
+
+
+   }
+}
+
+
+
+
+
+
+Palindrome Number
+
+
+import java.util.*;
+public class AssignmentJava {
+   public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       // Palindrome number
+       int num,sum = 0, r, temp;
+       System.out.print("Enter any number: ");
+        num = sc.nextInt();
+
+
+        temp = num;
+
+
+         while(temp != 0) {
+             r = temp % 10;
+             sum = sum * 10 + r;
+             temp = temp / 10;
+         }
+         if( num == sum){
+             System.out.println("Palindrome Number");
+         }else{
+             System.out.println("Not a Palindrome Number");
+         }
+
+
+
+
+   }
+}
+
+
+
+
+
+
+
+
+Assignment 14 : 
+
+
+# Generate and print palindrome numbers from m to n
+# Count and print number of palindrome numbers
+
+
+import java.util.*;
+public class AssignmentJava {
+   public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       // generate and print palindrome numbers from m to n
+       // count and print number of palindrome numbers
+
+
+       int  sum = 0, r, temp;
+       System.out.print("start number: ");
+       int m = sc.nextInt();
+       System.out.print(" end number: ");
+       int n = sc.nextInt();
+       int totalPalindromeNumber = 0;
+       for(int i = m ; i <= n; i++){
+           temp = i;
+
+
+           while(temp != 0) {
+               r = temp % 10;
+               sum = sum * 10 + r;
+               temp = temp / 10;
+           }
+           if( i == sum ){
+
+
+               System.out.print(sum + " " );
+               totalPalindromeNumber++;
+           }
+           sum = 0;
+
+
+       }
+       System.out.print("Total palindrome numbers=" + totalPalindromeNumber);
+
+
+
+
+   }
+
+
+}
+
+
+
+
+
+
+How to check an Armstrong number?
+
+
+import java.util.*;
+public class AssignmentJava {
+   public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       // how to check an Armstrong Number
+
+
+
+
+       int  sum = 0, r, temp;
+       System.out.print("Enter any number: ");
+       int num = sc.nextInt();
+          temp = num;
+
+
+           while(temp != 0) {
+               r = temp % 10;
+               sum = sum + r * r * r;
+               temp = temp / 10;
+           }
+           if( num == sum ){
+
+
+               System.out.println("Armstrong Number");
+
+
+           }else{
+               System.out.println("Not Armstrong Number");
+
+
+       }
+
+
+   }
+}
+
+
+
+
+
+
+# Generate and print armstrong numbers from  m - n
+# count and print number of armstrong numbers
+
+
+import java.util.*;
+public class AssignmentJava {
+   public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       // generate and print Armstrong Numbers from m - n
+       // count and print number of armstrong numbers
+
+
+
+
+       int  sum = 0, r, temp;
+       System.out.print("start number: ");
+       int m = sc.nextInt();
+       System.out.print("end number: ");
+       int n = sc.nextInt();
+       int totalArmstrongNumber = 0;
+       for(int i = m; i <= n; i++){
+
+
+           temp = i;
+
+
+           while(temp != 0) {
+               r = temp % 10;
+               sum = sum + r * r * r;
+               temp = temp / 10;
+           }
+           if( i == sum ){
+
+
+               System.out.print( sum + " ");
+               totalArmstrongNumber++;
+
+
+           }
+           sum = 0;
+       }
+       System.out.println("Total Armstrong Number = " +totalArmstrongNumber);
+
+
+
+
+   }
+}

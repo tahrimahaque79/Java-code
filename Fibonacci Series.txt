@@ -1,0 +1,75 @@
+﻿Fibonacci Series
+
+
+import java.util.*;
+public class AssignmentJava{
+  public static void main(String[] args) {
+     Scanner sc = new Scanner(System.in);
+     // Fibonacci series
+
+
+      System.out.print("Enter any number: ");
+      int n = sc.nextInt();
+
+
+      int first = 0;
+      int second = 1;
+      int fibo;
+      System.out.print(first + " " + second);
+      for(int i = 3; i <= n; i++){
+          fibo = first + second;
+          System.out.print(" " + fibo);
+          first = second;
+          second = fibo;
+      }
+      System.out.println();
+
+
+  }
+}
+
+
+Find the nth Fibonacci number
+
+
+import java.util.*;
+public class AssignmentJava {
+   public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       // Fibonacci series  0,1,1,2,3,5,8,13,21,34...............
+       // Find nth Fibonacci number
+
+
+       System.out.print("Which fibonacci number do you want to see? ");
+       int n = sc.nextInt();
+
+
+       int first = 0;
+       int second = 1;
+       int fibo;
+       if(n == 1){
+           fibo = first;
+           System.out.println(fibo);
+       } else if (n == 2) {
+           fibo = second;
+           System.out.println(fibo);
+       }else{
+           for (int i = 3; i <= n; i++) {
+               fibo = first + second;
+
+
+
+
+               first = second;
+               second = fibo;
+               if (n == i) {
+                   System.out.println(fibo);
+               }
+
+
+           }
+       }
+
+
+   }
+}

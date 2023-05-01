@@ -1,0 +1,301 @@
+﻿Assignment 8
+
+
+
+
+// Logical and assignment
+	
+
+	
+
+	// Check eligible candidate
+	
+
+	// Step 1: Ask the candidate have you completed your masters? y/n
+	
+
+	// Step 2: Ask the candidate are you fulent in English? y/n
+	
+
+	// Step 3: if the candidate has passed masters and also have fluent english skill then print you are eligible to for the job interview
+	
+
+	// Step 4: else print Sorry. you are not eligible to for the job interview
+	
+
+
+
+
+
+import java.util.*;
+
+
+public class AssignmentJava {
+
+
+    public static void main(String[] args) {
+
+
+        char Q1, Q2;
+
+
+       Scanner sc = new Scanner(System.in);
+
+
+        System.out.println("Q1: Have you completed your masters? y/n : ");
+
+
+
+
+
+
+        Q1 = sc.next().charAt(0);
+
+
+
+
+
+
+        System.out.println("Q2: Are you fluent in English? y/n : ");
+
+
+
+
+
+
+        Q2 = sc.next().charAt(0);
+
+
+
+
+
+
+        if((Q1 == 'y' || Q1 == 'Y') &&  (Q2 == 'y' || Q2 == 'Y' )){
+
+
+            System.out.println(" Candidate is eligible for the job interview ");
+
+
+        }else{
+
+
+            System.out.println(" Candidate is not eligible for the job interview ");
+
+
+        }
+
+
+    }
+
+
+}
+
+
+
+
+
+
+Assignment 9
+
+
+
+
+// switch assignment: call center
+	
+
+	
+
+	// if user select option 1 then set language bengali
+	
+
+	// if user select option 2 then set language hindi
+	
+
+	// if user select option 3 then set language urdu
+	
+
+	// for any other option set language english
+	
+
+
+
+import java.util.*;
+
+
+public class AssignmentJava {
+
+
+    public static void main(String[] args) {
+
+
+        int option;
+
+
+       Scanner sc = new Scanner(System.in);
+
+
+        System.out.println("Enter option : ");
+
+
+
+
+
+
+        option = sc.nextInt();
+
+
+ switch (option){
+
+
+     case 1:
+
+
+         System.out.println("Bengali");
+
+
+         break;
+
+
+     case 2:
+
+
+         System.out.println("Hindi");
+
+
+         break;
+
+
+     case 3:
+
+
+         System.out.println("Urdu");
+
+
+         break;
+
+
+
+
+
+
+         default:
+
+
+         System.out.println("English");
+
+
+ }
+
+
+
+
+
+
+    }
+
+
+}
+
+
+
+
+Assignment 10
+
+
+// find sum of 1-10 using for loop
+public class AssignmentJava {
+
+
+    public static void main(String[] args) {
+
+
+       int sum = 0;
+
+
+       for(int i = 1; i <= 10; i++){
+
+
+           sum = sum + i;
+
+
+       }
+
+
+        System.out.println("Sum = " + sum);
+
+
+
+
+
+
+    }
+
+
+}
+
+
+
+
+Assignment 11
+
+
+// find factorial of n
+
+
+
+
+
+
+import java.util.*;
+public class AssignmentJava {
+   public static void main(String[] args) {
+      // Find factorial of n
+       long n,fact = 1;
+       Scanner sc = new Scanner(System.in);
+       System.out.println("Enter Number: ");
+       n = sc.nextLong();
+       for (int i = 1; i <= n ; i++){
+           fact = fact*i;
+       }
+       System.out.println("Factorial = " + fact);
+
+
+   }
+}
+
+
+
+
+Assignment 12
+
+
+// print sum of odd numbers from m-n
+
+
+
+
+
+
+import java.util.*;
+public class AssignmentJava {
+   public static void main(String[] args) {
+      // Print sum of odd numbers from m-n
+       int m , n;
+       int sum = 0;
+       Scanner sc = new Scanner(System.in);
+       System.out.println("Enter a starting number : ");
+       m = sc.nextInt();
+       System.out.println("Enter a ending number : ");
+       n = sc.nextInt();
+       for (int i = m; i <= n; i++){
+           if(i % 2 != 0) {
+               sum = sum + i;
+           }
+       }
+       System.out.println(" sum of odd numbers = " + sum);
+
+
+
+
+   }
+}

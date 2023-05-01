@@ -1,0 +1,126 @@
+﻿Series 1:
+
+
+1 x 2 x 3 x ………………………..x n
+
+
+
+
+import java.util.*;
+public class AssignmentJava {
+   public static void main(String[] args) {
+      // 1 x 2 x 3 x.............x n
+       int n , result = 1;
+       Scanner sc = new Scanner(System.in);
+       System.out.print("Enter the last number : ");
+       n = sc.nextInt();
+
+
+       for (int i = 1; i <= n; i = i + 1){
+           System.out.print(i + " ");
+           result = result * i ;
+       }
+       System.out.println();
+       System.out.println("result = " + result);
+
+
+
+
+   }
+}
+
+
+
+
+Series 2:
+
+
+1 x 3 x 5 x ……………………………….x n
+
+
+import java.util.*;
+public class AssignmentJava {
+   public static void main(String[] args) {
+      // 1 x 3 x 5 x.............x n
+       int n , result = 1;
+       Scanner sc = new Scanner(System.in);
+       System.out.print("Enter the last number : ");
+       n = sc.nextInt();
+
+
+       for (int i = 1; i <= n; i = i + 2){
+           System.out.print(i + " ");
+           result = result * i ;
+       }
+       System.out.println();
+       System.out.println("result = " + result);
+
+
+
+
+   }
+}
+
+
+
+
+Series 3:
+
+
+1.5 x 2.5 x 3.5 x …………….x n
+
+
+
+
+import java.util.*;
+public class AssignmentJava {
+   public static void main(String[] args) {
+      // 1.5 x 2.5 x 3.5 x.............x n
+       double n , result = 1;
+       Scanner sc = new Scanner(System.in);
+       System.out.print("Enter the last number : ");
+       n = sc.nextDouble();
+
+
+       for (double i = 1.5; i <= n; i = i + 1){
+           System.out.print(i + " ");
+           result = result * i ;
+       }
+       System.out.println();
+       System.out.println("result = " + result);
+
+
+
+
+   }
+}
+
+
+
+
+Series 4:
+
+
+1^2 x 2^2 x 3^2 x 4^2 x ………………………..x n^2
+import java.util.*;
+public class AssignmentJava {
+   public static void main(String[] args) {
+      // 1^2 x 2^2 x 3^2 x 4^2 x .............x n^2
+       int n , result = 1;
+       Scanner sc = new Scanner(System.in);
+       System.out.print("Enter the last number : ");
+       n = sc.nextInt();
+
+
+       for (int i = 1; i <= n; i = i + 1){
+           System.out.print(i + " ");
+           result = result * i * i ;
+       }
+       System.out.println();
+       System.out.println("result = " + result);
+
+
+
+
+   }
+}
